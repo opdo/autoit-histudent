@@ -1,0 +1,220 @@
+; -- Created with ISN Form Studio 2 for ISN AutoIt Studio -- ;
+#include <StaticConstants.au3>
+#include <GUIConstantsEx.au3>
+#include <WindowsConstants.au3>
+#Include <GuiButton.au3>
+#include <EditConstants.au3>
+
+$NOTEGUI2 = GUICreate("NOTEGUI2",606,390,-1,-1,-1,-1,$NOTEGUI)
+GUISetBkColor(0xFFFF00,$NOTEGUI2)
+GUICtrlCreateLabel("My Text",36,17,250,76,$SS_BLACKFRAME,-1)
+GUICtrlSetState(-1,BitOr($GUI_SHOW,$GUI_DISABLE))
+GUICtrlSetBkColor(-1,"-2")
+GUICtrlCreateLabel("Ghi chú của tôi",65,18,220,29,$SS_CENTERIMAGE,-1)
+GUICtrlSetFont(-1,12,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"0x0080FF")
+GUICtrlCreateLabel("🔥",37,18,28,29,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,12,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"0x0080FF")
+GUICtrlCreateLabel("",37,47,15,45,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,12,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"0x4AA5FF")
+GUICtrlCreateLabel("My Text",0,130,599,99,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,14,400,0,"Segoe UI")
+GUICtrlSetBkColor(-1,"-2")
+GUICtrlCreateInput("My Text",220,260,229,63,$WS_SIZEBOX,$WS_EX_CLIENTEDGE)
+
+
+
+#cs
+[gui]
+Handle_deklaration=
+Handle_deklaration_const=false
+title=NOTEGUI2
+breite=606
+hoehe=390
+style=-1
+exstyle=-1
+bgcolour=0xFFFF00
+bgimage=none
+handle=NOTEGUI2
+parent=$NOTEGUI
+code=
+xpos=-1
+ypos=-1
+center_gui=true
+title_textmode=normal
+isf_include_once=false
+const_modus=default
+[0x000518A4]
+handle=356
+locked=0
+resize=
+code=
+type=label
+x=36
+y=17
+width=250
+height=76
+text=My Text
+tooltip=
+state=$GUI_SHOW+$GUI_DISABLE
+style=$SS_BLACKFRAME
+exstyle=
+textcolour=0x000000
+bgcolour=-2
+font=MS Sans Serif
+fontsize=8
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+order=0
+tabpage=-1
+iconindex=
+textmode=text
+[0x000618C6]
+handle=357
+locked=0
+resize=
+code=
+type=label
+x=65
+y=18
+width=220
+height=29
+text=Ghi chú của tôi
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTERIMAGE
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=0x0080FF
+font=Segoe UI
+fontsize=12
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+order=2
+tabpage=-1
+iconindex=
+textmode=text
+[0x00151584]
+handle=358
+locked=0
+resize=
+code=
+type=label
+x=37
+y=18
+width=28
+height=29
+text=🔥
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=0x0080FF
+font=Segoe UI
+fontsize=12
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=3
+[0x000518AA]
+handle=359
+locked=0
+resize=
+code=
+type=label
+x=37
+y=47
+width=15
+height=45
+text=
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=0x4AA5FF
+font=Segoe UI
+fontsize=12
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=4
+[0x000518A6]
+handle=360
+locked=0
+resize=
+code=
+type=label
+x=0
+y=130
+width=599
+height=99
+text=My Text
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0x000000
+bgcolour=-2
+font=Segoe UI
+fontsize=14
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+order=5
+tabpage=-1
+iconindex=
+textmode=text
+[0x0007187C]
+handle=361
+locked=0
+resize=
+code=
+type=input
+x=220
+y=260
+width=229
+height=63
+text=My Text
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$WS_SIZEBOX
+exstyle=$WS_EX_CLIENTEDGE
+textcolour=0x000000
+bgcolour=
+font=MS Sans Serif
+fontsize=8
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+order=6
+tabpage=-1
+iconindex=
+textmode=text
+#ce

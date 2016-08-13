@@ -1,0 +1,104 @@
+; -- Created with ISN Form Studio 2 for ISN AutoIt Studio -- ;
+#include <StaticConstants.au3>
+#include <GUIConstantsEx.au3>
+#include <WindowsConstants.au3>
+#Include <GuiButton.au3>
+
+Global $UpdateGUI = GUICreate("UpdateGUI",344,200,-1,-1,-1,-1)
+GUISetBkColor(0x0072C6,$UpdateGUI)
+GUICtrlCreatePic(@scriptdir&"\"&"Images\update.bmp",140,10,67,67,-1,-1)
+GUICtrlCreateLabel("Kiểm tra cập nhật",20,90,302,33,$SS_CENTER,-1)
+GUICtrlSetFont(-1,14,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"-2")
+
+
+
+#cs
+[gui]
+Handle_deklaration=default
+Handle_deklaration_const=false
+title=UpdateGUI
+breite=344
+hoehe=200
+style=-1
+exstyle=-1
+bgcolour=0x0072C6
+bgimage=none
+handle=UpdateGUI
+parent=
+code=
+xpos=-1
+ypos=-1
+center_gui=true
+title_textmode=normal
+isf_include_once=false
+const_modus=default
+gui_event_close=
+gui_event_minimize=
+gui_event_restore=
+gui_event_maximize=
+gui_event_mousemove=
+gui_event_primarydown=
+gui_event_primaryup=
+gui_event_secoundarydown=
+gui_event_secoundaryup=
+gui_event_resized=
+gui_event_dropped=
+[0x002E17EE]
+handle=390
+locked=0
+resize=
+code=
+type=image
+x=140
+y=10
+width=67
+height=67
+tooltip=
+text=
+state=$GUI_SHOW+$GUI_ENABLE
+style=
+exstyle=
+textcolour=0x000000
+bgcolour=
+font=MS Sans Serif
+fontsize=8
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=Images\update.bmp
+order=0
+tabpage=-1
+iconindex=
+textmode=text
+[0x003D18DC]
+handle=391
+locked=0
+resize=
+code=
+type=label
+x=20
+y=90
+width=302
+height=33
+text=Kiểm tra cập nhật
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=-2
+font=Segoe UI
+fontsize=14
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+order=2
+tabpage=-1
+iconindex=
+textmode=text
+#ce

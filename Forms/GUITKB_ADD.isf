@@ -1,0 +1,268 @@
+; -- Created with ISN Form Studio 2 for ISN AutoIt Studio -- ;
+#include <StaticConstants.au3>
+#include <GUIConstantsEx.au3>
+#include <WindowsConstants.au3>
+#Include <GuiButton.au3>
+#include <EditConstants.au3>
+
+Global $GUITKB_ADD = GUICreate("GUITKB_ADD",354,209,-1,-1,-1,-1)
+GUISetBkColor(0x0072C6,$GUITKB_ADD)
+GUICtrlCreateLabel("Thêm thời khóa biểu",20,13,209,36,-1,-1)
+GUICtrlSetFont(-1,15,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"-2")
+GUICtrlCreateLabel("Tên thời khóa biểu",29,63,113,21,-1,-1)
+GUICtrlSetFont(-1,10,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"-2")
+GUICtrlCreateInput("",20,90,319,25,-1,0)
+GUICtrlSetFont(-1,13,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"0x0072C6")
+GUICtrlCreateLabel("",20,117,319,2,-1,-1)
+GUICtrlSetFont(-1,10,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"0xFFFFFF")
+GUICtrlCreateLabel("Đây là thời khóa biểu mặc định",19,134,320,21,-1,-1)
+GUICtrlSetFont(-1,10,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"-2")
+GUICtrlCreateLabel("Đồng ý",270,170,67,24,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,12,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"-2")
+GUICtrlCreateLabel("Hủy bỏ",192,170,67,24,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,12,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"-2")
+
+
+
+#cs
+[gui]
+Handle_deklaration=default
+Handle_deklaration_const=false
+title=GUITKB_ADD
+breite=354
+hoehe=209
+style=-1
+exstyle=-1
+bgcolour=0x0072C6
+bgimage=none
+handle=GUITKB_ADD
+parent=
+code=
+xpos=-1
+ypos=-1
+center_gui=true
+title_textmode=normal
+isf_include_once=false
+const_modus=default
+gui_event_close=
+gui_event_minimize=
+gui_event_restore=
+gui_event_maximize=
+gui_event_mousemove=
+gui_event_primarydown=
+gui_event_primaryup=
+gui_event_secoundarydown=
+gui_event_secoundaryup=
+gui_event_resized=
+gui_event_dropped=
+[0x000B04FC]
+handle=390
+locked=0
+resize=
+code=
+type=label
+x=20
+y=13
+width=209
+height=36
+text=Thêm thời khóa biểu
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=-2
+font=Segoe UI
+fontsize=15
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+order=0
+tabpage=-1
+iconindex=
+textmode=text
+[0x00081D22]
+handle=399
+locked=0
+resize=
+code=
+type=label
+x=29
+y=63
+width=113
+height=21
+text=Tên thời khóa biểu
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=-2
+font=Segoe UI
+fontsize=10
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=2
+[0x000C1CDC]
+handle=391
+locked=0
+resize=
+code=
+type=input
+x=20
+y=90
+width=319
+height=25
+text=
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=
+exstyle=0
+textcolour=0xFFFFFF
+bgcolour=0x0072C6
+font=Segoe UI
+fontsize=13
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+order=3
+tabpage=-1
+iconindex=
+textmode=text
+[0x000C1D16]
+handle=401
+locked=0
+resize=
+code=
+type=label
+x=20
+y=117
+width=319
+height=2
+text=
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=0xFFFFFF
+font=Segoe UI
+fontsize=10
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=4
+[0x00121D28]
+handle=402
+locked=0
+resize=
+code=
+type=label
+x=19
+y=134
+width=320
+height=21
+text=Đây là thời khóa biểu mặc định
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=-2
+font=Segoe UI
+fontsize=10
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=5
+[0x00061D06]
+handle=403
+locked=0
+resize=
+code=
+type=label
+x=270
+y=170
+width=67
+height=24
+text=Đồng ý
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=-2
+font=Segoe UI
+fontsize=12
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=6
+[0x00051D3A]
+handle=404
+locked=0
+resize=
+code=
+type=label
+x=192
+y=170
+width=67
+height=24
+text=Hủy bỏ
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=-2
+font=Segoe UI
+fontsize=12
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=7
+#ce

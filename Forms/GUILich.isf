@@ -1,0 +1,971 @@
+; -- Created with ISN Form Studio 2 for ISN AutoIt Studio -- ;
+#include <StaticConstants.au3>
+#include <GUIConstantsEx.au3>
+#include <WindowsConstants.au3>
+#Include <GuiButton.au3>
+
+Global $GUILich = GUICreate("GUILich",865,656,-1,-1,-1,-1)
+GUISetBkColor(0x0072C6,$GUILich)
+GUICtrlCreateLabel("Lịch biểu của bạn",0,0,865,73,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,30,300,0,"Segoe UI Light")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"-2")
+GUICtrlCreateLabel("",2,87,969,38,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,13,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0xD1D1D1")
+GUICtrlSetBkColor(-1,"0x008AF0")
+GUICtrlCreateLabel("Tháng mười hai 2016",315,87,230,38,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,14,600,0,"Segoe UI Semibold")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"-2")
+GUICtrlCreateLabel("Tháng mười một",545,87,172,38,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,12,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0x9DD8FF")
+GUICtrlSetBkColor(-1,"-2")
+GUICtrlCreateLabel("Tháng mười một",143,87,172,38,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,12,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0x9DD8FF")
+GUICtrlSetBkColor(-1,"-2")
+GUICtrlCreateLabel("◀",112,87,31,38,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,13,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0x9DD8FF")
+GUICtrlSetBkColor(-1,"-2")
+GUICtrlCreateLabel("Thứ hai",38,149,111,29,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,12,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"-2")
+GUICtrlCreateLabel("▶",717,87,31,38,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,13,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0x9DD8FF")
+GUICtrlSetBkColor(-1,"-2")
+GUICtrlCreateLabel("Thứ ba",150,149,111,29,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,12,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"-2")
+GUICtrlCreateLabel("Thứ tư",261,149,111,29,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,12,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"-2")
+GUICtrlCreateLabel("Thứ năm",373,149,111,29,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,12,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"-2")
+GUICtrlCreateLabel("Thứ bảy",597,149,111,29,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,12,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"-2")
+GUICtrlCreateLabel("Chủ nhật",709,149,111,29,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,12,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"-2")
+GUICtrlCreateLabel("",38,186,112,56,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,11,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0x0072C6")
+GUICtrlSetBkColor(-1,"0x9DD8FF")
+GUICtrlCreateLabel("1",85,188,27,28,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,18,600,0,"Segoe UI Semibold")
+GUICtrlSetColor(-1,"0x0072C6")
+GUICtrlSetBkColor(-1,"-2")
+GUICtrlCreateLabel("●",46,216,18,25,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,11,400,0,"Segoe UI Symbol")
+GUICtrlSetColor(-1,"0x0072C6")
+GUICtrlSetBkColor(-1,"-2")
+GUICtrlCreateLabel("Có 3 sự kiện",67,216,80,25,$SS_CENTERIMAGE,-1)
+GUICtrlSetFont(-1,10,300,0,"Segoe UI Light")
+GUICtrlSetColor(-1,"0x0072C6")
+GUICtrlSetBkColor(-1,"-2")
+GUICtrlCreateLabel("",45,526,775,1,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,11,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0x0072C6")
+GUICtrlSetBkColor(-1,"0x9DD8FF")
+GUICtrlCreateLabel("",648,610,205,33,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,13,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"0xC0C0C0")
+GUICtrlCreateLabel("THÊM MỘT SỰ KIỆN",684,610,169,33,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,13,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"0x0072C6")
+GUICtrlCreateLabel("Sự kiện mới",67,558,147,80,$SS_CENTER,-1)
+GUICtrlSetFont(-1,11,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"0x0072C6")
+GUICtrlCreateLabel("ICON",648,610,39,33,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,13,400,0,"Segoe UI Symbol")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"0x0072C6")
+GUICtrlCreateLabel("",446,610,184,33,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,13,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"0xC0C0C0")
+GUICtrlCreateLabel("XEM LỊCH THÁNG",482,610,148,33,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,13,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"0x0072C6")
+GUICtrlCreateLabel("ICON",443,610,39,33,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,13,400,0,"Segoe UI Symbol")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"0x0072C6")
+GUICtrlCreateLabel("",282,610,142,33,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,13,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"0xC0C0C0")
+GUICtrlCreateLabel("THOÁT RA",318,610,106,33,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,13,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"0x0072C6")
+GUICtrlCreateLabel("ICON",279,610,39,33,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,13,400,0,"Segoe UI Symbol")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"0x0072C6")
+GUICtrlCreateLabel("XEM LỊCH THÁNG",0,135,872,464,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,13,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"0xFFFFFF")
+
+
+
+#cs
+[gui]
+Handle_deklaration=default
+Handle_deklaration_const=false
+title=GUILich
+breite=865
+hoehe=656
+style=-1
+exstyle=-1
+bgcolour=0x0072C6
+bgimage=none
+handle=GUILich
+parent=
+code=
+xpos=-1
+ypos=-1
+center_gui=true
+title_textmode=normal
+isf_include_once=false
+const_modus=default
+gui_event_close=
+gui_event_minimize=
+gui_event_restore=
+gui_event_maximize=
+gui_event_mousemove=
+gui_event_primarydown=
+gui_event_primaryup=
+gui_event_secoundarydown=
+gui_event_secoundaryup=
+gui_event_resized=
+gui_event_dropped=
+[0x000218B0]
+handle=390
+locked=0
+resize=
+code=
+type=label
+x=0
+y=0
+width=865
+height=73
+text=Lịch biểu của bạn
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=-2
+font=Segoe UI Light
+fontsize=30
+fontstyle=300
+fontattribute=0
+id=
+func=
+bgimage=
+order=0
+tabpage=-1
+iconindex=
+textmode=text
+[0x000218A8]
+handle=391
+locked=0
+resize=
+code=
+type=label
+x=2
+y=87
+width=969
+height=38
+text=
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0xD1D1D1
+bgcolour=0x008AF0
+font=Segoe UI
+fontsize=13
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=1
+[0x000218AC]
+handle=392
+locked=0
+resize=
+code=
+type=label
+x=315
+y=87
+width=230
+height=38
+text=Tháng mười hai 2016
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=-2
+font=Segoe UI Semibold
+fontsize=14
+fontstyle=600
+fontattribute=0
+id=
+func=
+bgimage=
+order=2
+tabpage=-1
+iconindex=
+textmode=text
+[0x000218A4]
+handle=393
+locked=0
+resize=
+code=
+type=label
+x=143
+y=87
+width=172
+height=38
+text=Tháng mười một
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0x9DD8FF
+bgcolour=-2
+font=Segoe UI
+fontsize=12
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=4
+[0x0002189A]
+handle=394
+locked=0
+resize=
+code=
+type=label
+x=545
+y=87
+width=172
+height=38
+text=Tháng mười một
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0x9DD8FF
+bgcolour=-2
+font=Segoe UI
+fontsize=12
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=3
+[0x0002190E]
+handle=395
+locked=0
+resize=
+code=
+type=label
+x=112
+y=87
+width=31
+height=38
+text=◀
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0x9DD8FF
+bgcolour=-2
+font=Segoe UI
+fontsize=13
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=5
+[0x00021912]
+handle=396
+locked=0
+resize=
+code=
+type=label
+x=717
+y=87
+width=31
+height=38
+text=▶
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0x9DD8FF
+bgcolour=-2
+font=Segoe UI
+fontsize=13
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=7
+[0x0002189E]
+handle=397
+locked=0
+resize=
+code=
+type=label
+x=38
+y=149
+width=111
+height=29
+text=Thứ hai
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=-2
+font=Segoe UI
+fontsize=12
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+order=6
+tabpage=-1
+iconindex=
+textmode=text
+[0x00021914]
+handle=398
+locked=0
+resize=
+code=
+type=label
+x=150
+y=149
+width=111
+height=29
+text=Thứ ba
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=-2
+font=Segoe UI
+fontsize=12
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=8
+[0x0002191C]
+handle=399
+locked=0
+resize=
+code=
+type=label
+x=261
+y=149
+width=111
+height=29
+text=Thứ tư
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=-2
+font=Segoe UI
+fontsize=12
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=9
+[0x00021918]
+handle=400
+locked=0
+resize=
+code=
+type=label
+x=373
+y=149
+width=111
+height=29
+text=Thứ năm
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=-2
+font=Segoe UI
+fontsize=12
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=10
+[0x00041900]
+handle=402
+locked=0
+resize=
+code=
+type=label
+x=597
+y=149
+width=111
+height=29
+text=Thứ bảy
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=-2
+font=Segoe UI
+fontsize=12
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=12
+[0x000517E8]
+handle=403
+locked=0
+resize=
+code=
+type=label
+x=709
+y=149
+width=111
+height=29
+text=Chủ nhật
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=-2
+font=Segoe UI
+fontsize=12
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=13
+[0x0003187E]
+handle=404
+locked=0
+resize=
+code=
+type=label
+x=38
+y=186
+width=112
+height=56
+text=
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0x0072C6
+bgcolour=0x9DD8FF
+font=Segoe UI
+fontsize=11
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=14
+[0x00031888]
+handle=405
+locked=0
+resize=
+code=
+type=label
+x=45
+y=526
+width=775
+height=1
+text=
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0x0072C6
+bgcolour=0x9DD8FF
+font=Segoe UI
+fontsize=11
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=21
+[0x000218AE]
+handle=406
+locked=0
+resize=
+code=
+type=label
+x=85
+y=188
+width=27
+height=28
+text=1
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0x0072C6
+bgcolour=-2
+font=Segoe UI Semibold
+fontsize=18
+fontstyle=600
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=18
+[0x000218CE]
+handle=407
+locked=0
+resize=
+code=
+type=label
+x=46
+y=216
+width=18
+height=25
+text=●
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0x0072C6
+bgcolour=-2
+font=Segoe UI Symbol
+fontsize=11
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=19
+[0x00011920]
+handle=408
+locked=0
+resize=
+code=
+type=label
+x=67
+y=216
+width=80
+height=25
+text=Có 3 sự kiện
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTERIMAGE
+exstyle=
+textcolour=0x0072C6
+bgcolour=-2
+font=Segoe UI Light
+fontsize=10
+fontstyle=300
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=20
+[0x0001192C]
+handle=411
+locked=0
+resize=
+code=
+type=label
+x=67
+y=558
+width=147
+height=80
+text=Sự kiện mới
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=0x0072C6
+font=Segoe UI
+fontsize=11
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=23
+[0x000A192A]
+handle=419
+locked=0
+resize=
+code=
+type=label
+x=648
+y=610
+width=205
+height=33
+text=
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=0xC0C0C0
+font=Segoe UI
+fontsize=13
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=22
+[0x00331D04]
+handle=420
+locked=0
+resize=
+code=
+type=label
+x=684
+y=610
+width=169
+height=33
+text=THÊM MỘT SỰ KIỆN
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=0x0072C6
+font=Segoe UI
+fontsize=13
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=23
+[0x00591980]
+handle=421
+locked=0
+resize=
+code=
+type=label
+x=648
+y=610
+width=39
+height=33
+text=ICON
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=0x0072C6
+font=Segoe UI Symbol
+fontsize=13
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=24
+[0x00071CFA]
+handle=438
+locked=0
+resize=
+code=
+type=label
+x=446
+y=610
+width=184
+height=33
+text=
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=0xC0C0C0
+font=Segoe UI
+fontsize=13
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=25
+[0x000E17C6]
+handle=439
+locked=0
+resize=
+code=
+type=label
+x=482
+y=610
+width=148
+height=33
+text=XEM LỊCH THÁNG
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=0x0072C6
+font=Segoe UI
+fontsize=13
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=26
+[0x001006FE]
+handle=440
+locked=0
+resize=
+code=
+type=label
+x=443
+y=610
+width=39
+height=33
+text=ICON
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=0x0072C6
+font=Segoe UI Symbol
+fontsize=13
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=27
+[0x000F007A]
+handle=441
+locked=0
+resize=
+code=
+type=label
+x=282
+y=610
+width=142
+height=33
+text=
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=0xC0C0C0
+font=Segoe UI
+fontsize=13
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=28
+[0x000E1D24]
+handle=442
+locked=0
+resize=
+code=
+type=label
+x=318
+y=610
+width=106
+height=33
+text=THOÁT RA
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=0x0072C6
+font=Segoe UI
+fontsize=13
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=29
+[0x00301D08]
+handle=443
+locked=0
+resize=
+code=
+type=label
+x=279
+y=610
+width=39
+height=33
+text=ICON
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=0x0072C6
+font=Segoe UI Symbol
+fontsize=13
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=30
+[0x000A1FCE]
+handle=422
+locked=0
+resize=
+code=
+type=label
+x=0
+y=135
+width=872
+height=464
+text=XEM LỊCH THÁNG
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=0xFFFFFF
+font=Segoe UI
+fontsize=13
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=31
+#ce

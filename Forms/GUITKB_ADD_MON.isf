@@ -1,0 +1,457 @@
+; -- Created with ISN Form Studio 2 for ISN AutoIt Studio -- ;
+#include <StaticConstants.au3>
+#include <GUIConstantsEx.au3>
+#include <WindowsConstants.au3>
+#Include <GuiButton.au3>
+#include <EditConstants.au3>
+
+Global $GUITKB_ADD = GUICreate("GUITKB_ADD",356,345,-1,-1,-1,-1)
+GUISetBkColor(0x0072C6,$GUITKB_ADD)
+GUICtrlCreateLabel("Thêm nhắc nhở",20,13,209,36,-1,-1)
+GUICtrlSetFont(-1,15,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"-2")
+GUICtrlCreateLabel("Nhắc nhở của:",19,60,86,21,-1,-1)
+GUICtrlSetFont(-1,10,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"-2")
+GUICtrlCreateLabel("Đồng ý",271,307,67,24,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,12,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"-2")
+GUICtrlCreateLabel("Hủy bỏ",195,307,67,24,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,12,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"-2")
+GUICtrlCreateLabel("Mô tả nhắc nhở:",18,185,128,21,-1,-1)
+GUICtrlSetFont(-1,10,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"-2")
+GUICtrlCreateEdit("My Text",19,210,319,78,-1,-1)
+GUICtrlCreateLabel("Nhắc ngày:",19,94,86,21,-1,-1)
+GUICtrlSetFont(-1,10,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"-2")
+GUICtrlCreateLabel("Thứ hai",112,94,222,21,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,11,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0x0072C6")
+GUICtrlSetBkColor(-1,"0xFFFFFF")
+GUICtrlCreateLabel("Thứ hai",112,60,222,21,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,11,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0x0072C6")
+GUICtrlSetBkColor(-1,"0xFFFFFF")
+GUICtrlCreateLabel("",19,290,319,2,-1,-1)
+GUICtrlSetFont(-1,10,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"0xFFFFFF")
+GUICtrlCreateLabel("Nhắc nhở về:",18,131,86,21,-1,-1)
+GUICtrlSetFont(-1,10,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"-2")
+GUICtrlCreateLabel("Một ngày thi hay kiểm tra",110,131,217,21,-1,-1)
+GUICtrlSetFont(-1,10,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"-2")
+GUICtrlCreateLabel("Một bài tập, bài thuyết trình",110,158,217,21,-1,-1)
+GUICtrlSetFont(-1,10,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"-2")
+
+
+
+#cs
+[gui]
+Handle_deklaration=default
+Handle_deklaration_const=false
+title=GUITKB_ADD
+breite=356
+hoehe=345
+style=-1
+exstyle=-1
+bgcolour=0x0072C6
+bgimage=none
+handle=GUITKB_ADD
+parent=
+code=
+xpos=-1
+ypos=-1
+center_gui=true
+title_textmode=normal
+isf_include_once=false
+const_modus=default
+gui_event_close=
+gui_event_minimize=
+gui_event_restore=
+gui_event_maximize=
+gui_event_mousemove=
+gui_event_primarydown=
+gui_event_primaryup=
+gui_event_secoundarydown=
+gui_event_secoundaryup=
+gui_event_resized=
+gui_event_dropped=
+[0x000119C0]
+handle=390
+locked=0
+resize=
+code=
+type=label
+x=20
+y=13
+width=209
+height=36
+text=Thêm nhắc nhở
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=-2
+font=Segoe UI
+fontsize=15
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+order=0
+tabpage=-1
+iconindex=
+textmode=text
+[0x000119C4]
+handle=391
+locked=0
+resize=
+code=
+type=label
+x=19
+y=60
+width=86
+height=21
+text=Nhắc nhở của:
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=-2
+font=Segoe UI
+fontsize=10
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=2
+[0x000119C8]
+handle=392
+locked=0
+resize=
+code=
+type=label
+x=271
+y=307
+width=67
+height=24
+text=Đồng ý
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=-2
+font=Segoe UI
+fontsize=12
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=6
+[0x000119CC]
+handle=393
+locked=0
+resize=
+code=
+type=label
+x=195
+y=307
+width=67
+height=24
+text=Hủy bỏ
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=-2
+font=Segoe UI
+fontsize=12
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=7
+[0x000119D0]
+handle=394
+locked=0
+resize=
+code=
+type=label
+x=112
+y=60
+width=222
+height=21
+text=Thứ hai
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0x0072C6
+bgcolour=0xFFFFFF
+font=Segoe UI
+fontsize=11
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=19
+[0x000119D4]
+handle=395
+locked=0
+resize=
+code=
+type=label
+x=19
+y=290
+width=319
+height=2
+text=
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=0xFFFFFF
+font=Segoe UI
+fontsize=10
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=25
+[0x000119D8]
+handle=396
+locked=0
+resize=
+code=
+type=label
+x=110
+y=131
+width=217
+height=21
+text=Một ngày thi hay kiểm tra
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=-2
+font=Segoe UI
+fontsize=10
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=26
+[0x000119DC]
+handle=397
+locked=0
+resize=
+code=
+type=label
+x=18
+y=131
+width=86
+height=21
+text=Nhắc nhở về:
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=-2
+font=Segoe UI
+fontsize=10
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=25
+[0x000119E0]
+handle=398
+locked=0
+resize=
+code=
+type=label
+x=110
+y=158
+width=217
+height=21
+text=Một bài tập, bài thuyết trình
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=-2
+font=Segoe UI
+fontsize=10
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=26
+[0x000119E4]
+handle=399
+locked=0
+resize=
+code=
+type=label
+x=18
+y=185
+width=128
+height=21
+text=Mô tả nhắc nhở:
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=-2
+font=Segoe UI
+fontsize=10
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=10
+[0x000119E8]
+handle=400
+locked=0
+resize=
+code=
+type=edit
+x=19
+y=210
+width=319
+height=78
+text=My Text
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=
+exstyle=
+textcolour=0x000000
+bgcolour=
+font=MS Sans Serif
+fontsize=8
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+order=11
+tabpage=-1
+iconindex=
+textmode=text
+[0x000119EC]
+handle=401
+locked=0
+resize=
+code=
+type=label
+x=19
+y=94
+width=86
+height=21
+text=Nhắc ngày:
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=-2
+font=Segoe UI
+fontsize=10
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=12
+[0x000119F0]
+handle=402
+locked=0
+resize=
+code=
+type=label
+x=112
+y=94
+width=222
+height=21
+text=Thứ hai
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0x0072C6
+bgcolour=0xFFFFFF
+font=Segoe UI
+fontsize=11
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=13
+#ce

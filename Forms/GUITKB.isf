@@ -1,0 +1,426 @@
+; -- Created with ISN Form Studio 2 for ISN AutoIt Studio -- ;
+#include <StaticConstants.au3>
+#include <GUIConstantsEx.au3>
+#include <WindowsConstants.au3>
+#Include <GuiButton.au3>
+
+Global $GUITKB = GUICreate("GUITKB",822,509,-1,-1,-1,-1)
+GUISetBkColor(0xFFFFFF,$GUITKB)
+GUICtrlCreateLabel("",0,0,824,100,-1,-1)
+GUICtrlSetState(-1,BitOr($GUI_SHOW,$GUI_DISABLE))
+GUICtrlSetBkColor(-1,"0x0072C6")
+GUICtrlCreateLabel("Thời khóa biểu học tập",30,16,384,33,$SS_CENTERIMAGE,-1)
+GUICtrlSetFont(-1,25,300,0,"Segoe UI Light")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"-2")
+GUICtrlCreateLabel("Thời khóa biểu học tập",30,60,222,28,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,11,300,0,"Segoe UI Light")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"0x0063B1")
+GUICtrlCreateLabel("<",252,60,21,28,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,11,400,0,"Segoe UI Symbol")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"0x0063B1")
+GUICtrlCreateLabel(">",273,60,21,28,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,11,400,0,"Segoe UI Symbol")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"0x0063B1")
+GUICtrlCreateLabel("E",314,60,21,28,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,11,400,0,"Segoe UI Symbol")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"0x0063B1")
+GUICtrlCreateLabel("+",293,60,21,28,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,11,400,0,"Segoe UI Symbol")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"0x0063B1")
+GUICtrlCreateLabel("THÊM MÔN HỌC",601,460,133,33,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,10,600,0,"Segoe UI Semibold")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"0x0072C6")
+GUICtrlCreateLabel("KHÓA BIỂU",31,458,93,37,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,11,300,0,"Segoe UI Light")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"0x0063B1")
+GUICtrlCreateLabel("THÊM NHẮC NHỞ",461,460,133,33,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,10,600,0,"Segoe UI Semibold")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"0x0072C6")
+GUICtrlCreateLabel("THOÁT",740,460,66,33,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,10,600,0,"Segoe UI Semibold")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"0x0072C6")
+GUICtrlCreateLabel("MÔN HỌC",124,458,93,37,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,11,300,0,"Segoe UI Light")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"0x0063B1")
+
+
+
+#cs
+[gui]
+Handle_deklaration=default
+Handle_deklaration_const=false
+title=GUITKB
+breite=822
+hoehe=509
+style=-1
+exstyle=-1
+bgcolour=0xFFFFFF
+bgimage=none
+handle=GUITKB
+parent=
+code=
+xpos=-1
+ypos=-1
+center_gui=true
+title_textmode=normal
+isf_include_once=false
+const_modus=default
+gui_event_close=
+gui_event_minimize=
+gui_event_restore=
+gui_event_maximize=
+gui_event_mousemove=
+gui_event_primarydown=
+gui_event_primaryup=
+gui_event_secoundarydown=
+gui_event_secoundaryup=
+gui_event_resized=
+gui_event_dropped=
+[0x00531A6A]
+handle=390
+locked=0
+resize=
+code=
+type=label
+x=0
+y=0
+width=824
+height=100
+text=
+tooltip=
+state=$GUI_SHOW+$GUI_DISABLE
+style=
+exstyle=
+textcolour=0x000000
+bgcolour=0x0072C6
+font=MS Sans Serif
+fontsize=8
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+order=0
+tabpage=-1
+iconindex=
+textmode=text
+[0x00541A6E]
+handle=391
+locked=0
+resize=
+code=
+type=label
+x=30
+y=16
+width=384
+height=33
+text=Thời khóa biểu học tập
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTERIMAGE
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=-2
+font=Segoe UI Light
+fontsize=25
+fontstyle=300
+fontattribute=0
+id=
+func=
+bgimage=
+order=3
+tabpage=-1
+iconindex=
+textmode=text
+[0x00521A7E]
+handle=392
+locked=0
+resize=
+code=
+type=label
+x=30
+y=60
+width=222
+height=28
+text=Thời khóa biểu học tập
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=0x0063B1
+font=Segoe UI Light
+fontsize=11
+fontstyle=300
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=4
+[0x00521A82]
+handle=393
+locked=0
+resize=
+code=
+type=label
+x=252
+y=60
+width=21
+height=28
+text=<
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=0x0063B1
+font=Segoe UI Symbol
+fontsize=11
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=5
+[0x00521A86]
+handle=394
+locked=0
+resize=
+code=
+type=label
+x=273
+y=60
+width=21
+height=28
+text=>
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=0x0063B1
+font=Segoe UI Symbol
+fontsize=11
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=6
+[0x00521A8A]
+handle=395
+locked=0
+resize=
+code=
+type=label
+x=314
+y=60
+width=21
+height=28
+text=E
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=0x0063B1
+font=Segoe UI Symbol
+fontsize=11
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=7
+[0x00521A8E]
+handle=396
+locked=0
+resize=
+code=
+type=label
+x=293
+y=60
+width=21
+height=28
+text=+
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=0x0063B1
+font=Segoe UI Symbol
+fontsize=11
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=8
+[0x00521A94]
+handle=397
+locked=0
+resize=
+code=
+type=label
+x=740
+y=460
+width=66
+height=33
+text=THOÁT
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=0x0072C6
+font=Segoe UI Semibold
+fontsize=10
+fontstyle=600
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=11
+[0x00531A96]
+handle=398
+locked=0
+resize=
+code=
+type=label
+x=601
+y=460
+width=133
+height=33
+text=THÊM MÔN HỌC
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=0x0072C6
+font=Segoe UI Semibold
+fontsize=10
+fontstyle=600
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=10
+[0x00561A9A]
+handle=399
+locked=0
+resize=
+code=
+type=label
+x=461
+y=460
+width=133
+height=33
+text=THÊM NHẮC NHỞ
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=0x0072C6
+font=Segoe UI Semibold
+fontsize=10
+fontstyle=600
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=11
+[0x00561A30]
+handle=408
+locked=0
+resize=
+code=
+type=label
+x=31
+y=458
+width=93
+height=37
+text=KHÓA BIỂU
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=0x0063B1
+font=Segoe UI Light
+fontsize=11
+fontstyle=300
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=11
+[0x00591A2E]
+handle=409
+locked=0
+resize=
+code=
+type=label
+x=124
+y=458
+width=93
+height=37
+text=MÔN HỌC
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=0x0063B1
+font=Segoe UI Light
+fontsize=11
+fontstyle=300
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=12
+#ce

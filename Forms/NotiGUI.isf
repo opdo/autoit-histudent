@@ -1,0 +1,170 @@
+; -- Created with ISN Form Studio 2 for ISN AutoIt Studio -- ;
+#include <StaticConstants.au3>
+#include <GUIConstantsEx.au3>
+#include <WindowsConstants.au3>
+#Include <GuiButton.au3>
+
+Global $NotiGUI = GUICreate("NotiGUI",319,56,-1,-1,-1,BitOr($WS_EX_TOPMOST,$WS_EX_TOOLWINDOW))
+GUICtrlCreateLabel("💌",0,0,53,56,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,20,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"0x0080C0")
+GUICtrlCreateLabel("Đóng học phí mới",54,0,244,29,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,11,600,0,"Segoe UI Semibold")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"0x00A9FB")
+GUICtrlCreateLabel("Còn 15 ngày nữa",54,27,244,29,BitOr($SS_CENTER,$SS_CENTERIMAGE),-1)
+GUICtrlSetFont(-1,11,400,0,"Segoe UI")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"0x00A9FB")
+GUICtrlCreateLabel("X",298,0,23,61,$SS_CENTER,-1)
+GUICtrlSetFont(-1,13,600,0,"Segoe UI Semibold")
+GUICtrlSetColor(-1,"0xFFFFFF")
+GUICtrlSetBkColor(-1,"0x00A9FB")
+
+
+
+#cs
+[gui]
+Handle_deklaration=default
+Handle_deklaration_const=false
+title=NotiGUI
+breite=319
+hoehe=56
+style=-1
+exstyle=$WS_EX_TOPMOST+$WS_EX_TOOLWINDOW
+bgcolour=0xF0F0F0
+bgimage=none
+handle=NotiGUI
+parent=
+code=
+xpos=-1
+ypos=-1
+center_gui=true
+title_textmode=normal
+isf_include_once=false
+const_modus=default
+gui_event_close=
+gui_event_minimize=
+gui_event_restore=
+gui_event_maximize=
+gui_event_mousemove=
+gui_event_primarydown=
+gui_event_primaryup=
+gui_event_secoundarydown=
+gui_event_secoundaryup=
+gui_event_resized=
+gui_event_dropped=
+[0x003C1842]
+handle=390
+locked=0
+resize=
+code=
+type=label
+x=0
+y=0
+width=53
+height=56
+text=💌
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=0x0080C0
+font=Segoe UI
+fontsize=20
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+order=0
+tabpage=-1
+iconindex=
+textmode=text
+[0x00250016]
+handle=391
+locked=0
+resize=
+code=
+type=label
+x=54
+y=0
+width=244
+height=29
+text=Đóng học phí mới
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=0x00A9FB
+font=Segoe UI Semibold
+fontsize=11
+fontstyle=600
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=2
+[0x000118A4]
+handle=392
+locked=0
+resize=
+code=
+type=label
+x=54
+y=27
+width=244
+height=29
+text=Còn 15 ngày nữa
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER+$SS_CENTERIMAGE
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=0x00A9FB
+font=Segoe UI
+fontsize=11
+fontstyle=400
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=3
+[0x000118A8]
+handle=393
+locked=0
+resize=
+code=
+type=label
+x=298
+y=0
+width=23
+height=61
+text=X
+tooltip=
+state=$GUI_SHOW+$GUI_ENABLE
+style=$SS_CENTER
+exstyle=
+textcolour=0xFFFFFF
+bgcolour=0x00A9FB
+font=Segoe UI Semibold
+fontsize=13
+fontstyle=600
+fontattribute=0
+id=
+func=
+bgimage=
+tabpage=-1
+iconindex=
+textmode=text
+order=4
+#ce
